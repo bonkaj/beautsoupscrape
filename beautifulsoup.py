@@ -20,5 +20,12 @@ paragraph = soup.find_all('p')
 
 print(paragraph)
 
+f = open("siteparagraph.txt", "w")
+
+for each in paragraph:
+    f.write(str(each) + '\n')
+
+f.close()
+
 
 
